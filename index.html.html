@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCP Personas | Banca Digital (Demo)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body data-segment="personas">
+  <div id="app-header"></div>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Nuevas Oportunidades para tus Ahorros</h1>
+        <p>Abre tu Cuenta Digital hoy sin comisiones de mantenimiento</p>
+        <div class="hero-ctas">
+          <a class="btn btn-orange" href="ahorros.html">Abre tu Cuenta</a>
+          <a class="btn btn-orange" href="tarjetas.html">Ver más tarjetas</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="Asesora digital">
+      </div>
+    </div>
+  </section>
+
+  <section class="container home-grid">
+    <div>
+      <h2 style="text-align:left">¿Qué necesitas hacer hoy?</h2>
+      <div class="quick-grid">
+        <a class="quick-item" href="empresas.html">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><rect x="12" y="10" width="18" height="24" rx="2"/><circle cx="32" cy="30" r="7"/><path d="M29 30h6M12 16h18"/></svg>
+          Pagos de mi Empresa
+        </a>
+        <a class="quick-item" href="cobros.html">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><rect x="8" y="16" width="24" height="16" rx="2"/><path d="M32 22h8v10a4 4 0 0 1-4 4H14"/><circle cx="18" cy="24" r="2"/></svg>
+          Cobranza de mi Empresa
+        </a>
+        <a class="quick-item" href="ahorros.html">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><path d="M30 20c0-6-4-10-10-10S10 14 10 22c0 10 8 16 14 16 4 0 8-2 10-6"/><circle cx="34" cy="18" r="6"/><path d="M18 22v2"/></svg>
+          Cuenta Corriente
+        </a>
+        <a class="quick-item" href="prestamo.html">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><path d="M16 20c0-6 8-10 12-4 6 8-4 12-4 18"/><rect x="22" y="32" width="12" height="8" rx="2"/><circle cx="18" cy="14" r="2"/></svg>
+          Financiamiento Electrónico
+        </a>
+        <a class="quick-item" href="empresas.html">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><circle cx="24" cy="24" r="8"/><path d="M24 8v6M24 34v6M8 24h6M34 24h6M13 13l4 4M31 31l4 4M13 35l4-4M31 17l4-4"/></svg>
+          Descuento de Facturas
+        </a>
+        <a class="quick-item" href="#factoring">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><rect x="8" y="12" width="32" height="22" rx="3"/><path d="M16 40h16M20 34v6M28 34v6"/></svg>
+          Factoring Electrónico
+        </a>
+        <a class="quick-item" href="prestamo.html">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><rect x="14" y="8" width="20" height="28" rx="2"/><path d="M18 16h12M18 22h12M18 28h8"/></svg>
+          Carta Fianza
+        </a>
+        <a class="quick-item" href="#ayuda">
+          <svg class="ico" viewBox="0 0 48 48" fill="none" stroke="#3b82f6" stroke-width="2.2"><circle cx="24" cy="24" r="14"/><path d="M20 20a4 4 0 1 1 5 4c-1.5 1-2 2-2 4"/><circle cx="24" cy="32" r="1.3" fill="#3b82f6"/></svg>
+          Ir a Ayuda Rápida
+        </a>
+      </div>
+    </div>
+
+    <aside class="preaprob">
+      <div>
+        <h3>¡Conoce tus productos preaprobados!</h3>
+        <div class="checks">
+          <span><span class="dot">✓</span> Solo con tu número de Documento</span>
+          <span><span class="dot">✓</span> Para clientes y no clientes BCP</span>
+        </div>
+        <form class="pre-form" id="preForm">
+          <select aria-label="Tipo de documento">
+            <option>RUC</option>
+            <option>DNI</option>
+            <option>CE</option>
+          </select>
+          <input id="ruc" placeholder="RUC" maxlength="11">
+          <button class="btn btn-orange" type="submit">Conocer</button>
+        </form>
+        <p class="legal">Debes conocer que esta información será utilizada únicamente para los fines de este proceso, y será tratada según lo indicado en la <a href="#">Política de Privacidad (Protección de Datos Personales, sección 1)</a>.</p>
+      </div>
+      <div class="shield">
+        <svg width="180" height="180" viewBox="0 0 180 180">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#7ed957"/>
+              <stop offset="1" stop-color="#2f9e44"/>
+            </linearGradient>
+          </defs>
+          <path d="M90 12l62 22v52c0 38-24 70-62 82-38-12-62-44-62-82V34z" fill="url(#g)" stroke="#1f7a32" stroke-width="4"/>
+          <path d="M58 92l22 22 44-48" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </aside>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <h2 class="section-title">Productos destacados</h2>
+      <div class="cards-3">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80" alt="Tarjeta de crédito">
+          <div class="body">
+            <h3>💳 Tarjeta de Crédito</h3>
+            <p>Elige la tarjeta que va contigo y disfruta de beneficios todos los días.</p>
+            <a class="btn btn-navy" href="tarjetas.html">Pedir Tarjeta</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80" alt="Casa">
+          <div class="body">
+            <h3>🏠 Crédito Hipotecario</h3>
+            <p>Haz realidad tus sueños de vivir en tu propio hogar con las mejores tasas.</p>
+            <a class="btn btn-navy" href="hipotecario.html">Simular Crédito</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Soluciones digitales">
+          <div class="body">
+            <h3>💻 Soluciones Digitales / Cobros</h3>
+            <p>Cobra con link de pago y código QR. Fácil, rápido y seguro.</p>
+            <a class="btn btn-navy" href="cobros.html">Saber más</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cobros">
+    <div class="container three-grid">
+      <a class="soft-card" id="pymes" href="pymes.html">
+        <div class="ico-round">🏢</div>
+        <h3>Pymes</h3>
+        <p>Financiamiento, cobranza y pagos digitales para hacer crecer tu negocio.</p>
+      </a>
+      <a class="soft-card" id="empresas" href="empresas.html">
+        <div class="ico-round">🏦</div>
+        <h3>Empresas</h3>
+        <p>Tesorería, factoring, cartas fianza y soluciones de cash management.</p>
+      </a>
+      <a class="soft-card" id="factoring" href="cobros.html">
+        <div class="ico-round">📑</div>
+        <h3>Soluciones de cobro</h3>
+        <p>Compara Izipay y Culqi para cobrar en tu negocio.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="ayuda" style="background:#f4f6fa">
+    <div class="container" style="text-align:center">
+      <h2 class="section-title">Ayuda rápida</h2>
+      <p style="color:#5b6475;margin-bottom:16px">Encuentra tutoriales, bloqueo de tarjetas, claves y agencias.</p>
+      <a class="btn btn-navy" href="#" data-alert="Centro de ayuda ilustrativo. No hay conexión con banca real.">Ir a ayuda</a>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
