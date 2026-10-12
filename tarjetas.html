@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas de Débito y Crédito | Demo BCP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <section class="page-hero hero-tarjetas">
+    <div class="container">
+      <div>
+        <h1>Tarjetas de Débito y Crédito</h1>
+        <p style="color:#f37021;font-weight:700">Personas</p>
+        <p>✈️ Millas Benefit y Cashback<br>Acumula millas y recibe cashback en tus compras.</p>
+        <p>🔒 Seguridad Digital<br>Tecnología avanzada para proteger tus transacciones.</p>
+        <a class="btn btn-orange" href="#solicitud">conoce nuestras tarjetas</a>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1556742111-a301076d9d18?auto=format&fit=crop&w=900&q=80" alt="Tarjetas">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="color:#0b1f3a;margin-bottom:12px">Tarjetas de Débito</h2>
+      <div class="debit-box">
+        <div class="visa-card c-blue"><small>BCP</small><div class="chip"></div><span class="visa">VISA</span></div>
+        <div>
+          <h3>Tarjeta de Débito BCP VISA</h3>
+          <div class="tags"><span class="tag">Tradicional</span><span class="tag">Digital</span></div>
+          <p>Sin membresía</p>
+        </div>
+        <a class="btn btn-outline" href="#solicitud">ver tarjeta</a>
+      </div>
+
+      <h2 style="color:#0b1f3a;margin:24px 0 12px">Tarjetas de Crédito</h2>
+      <div class="five-grid">
+        <article class="card-mini">
+          <h4>clásico</h4>
+          <div class="visa-card c-blue"><small>BCP</small><div class="chip"></div><span class="visa">VISA</span></div>
+          <div class="benefits"><span>✈️ Millas Benefit</span><span>🎁 Cashback</span></div>
+        </article>
+        <article class="card-mini">
+          <h4>Gold</h4>
+          <div class="visa-card c-gold"><small>BCP</small><div class="chip"></div><span class="visa">VISA</span></div>
+          <div class="benefits"><span>✈️ Millas Benefit</span><span>🎁 Cashback</span></div>
+        </article>
+        <article class="card-mini">
+          <h4>Platinum</h4>
+          <div class="visa-card c-plat"><small>BCP</small><div class="chip"></div><span class="visa">VISA</span></div>
+          <div class="benefits"><span>✈️ Millas Benefit</span><span>🎁 Cashback</span></div>
+        </article>
+        <article class="card-mini">
+          <h4>Signature</h4>
+          <div class="visa-card c-sig"><small>BCP</small><div class="chip"></div><span class="visa">VISA</span></div>
+          <div class="benefits"><span>✈️ Millas Benefit</span><span>🎁 Cashback</span></div>
+        </article>
+        <article class="card-mini">
+          <h4>infinite</h4>
+          <div class="visa-card c-inf"><small>BCP</small><div class="chip"></div><span class="visa">VISA</span></div>
+          <div class="benefits"><span>✈️ Millas Benefit</span><span>🎁 Cashback</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="solicitud" style="background:#f7f8fb">
+    <div class="container solicitud">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Solicitud online" style="border-radius:16px;height:280px;object-fit:cover;width:100%">
+      <div>
+        <h2 style="color:#0b1f3a">Solicitud Online</h2>
+        <p>Evaluación crediticia en línea</p>
+        <span class="tag" style="display:inline-block;margin:10px 0 14px;background:#fff;color:#f37021;border:1.5px solid #f37021">Aprobación al instante</span>
+        <form class="form-fields" id="solForm">
+          <label>DNI<input required placeholder="Número de DNI"></label>
+          <label>Celular<input required placeholder="9 dígitos"></label>
+          <label>Correo Electrónico<input type="email" required placeholder="tucorreo@email.com"></label>
+          <button class="btn btn-navy" type="submit">Solicitar evaluación</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Cuentas de Ahorro | Demo BCP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <section class="page-hero hero-ahorros">
+    <div class="container">
+      <div>
+        <h1>Ventajas de ahorros sin comisiones de mantenimiento y rentabilidad garantizada.</h1>
+        <div class="accent-line"></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34d1?auto=format&fit=crop&w=900&q=80" alt="App de ahorros">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="catalog-title">Catálogo de Cuentas de Ahorro</h2>
+      <div class="account-grid">
+        <article class="soft-card">
+          <div class="ico-round">📱</div>
+          <h3>Cuenta Digital</h3>
+          <p>Cero mantenimientos, operaciones ilimitadas por banca por internet / móvil.</p>
+        </article>
+        <article class="soft-card">
+          <div class="ico-round">🏅</div>
+          <h3>Cuenta Premio</h3>
+          <p>Ahorro rentable con sorteos periódicos de dinero y departamentos.</p>
+        </article>
+        <article class="soft-card">
+          <div class="ico-round">💼</div>
+          <h3>Cuenta Sueldo</h3>
+          <p>Descuentos exclusivos en comercios, adelantos de sueldo y cero comisiones.</p>
+        </article>
+      </div>
+
+      <div class="two-col" style="margin-top:20px">
+        <div class="panel">
+          <h3>Simulador de intereses</h3>
+          <p>Calculadora interactiva según el saldo promedio y plazo de ahorro.</p>
+          <form id="savingsForm">
+            <div class="selects">
+              <label>Saldo Promedio
+                <select id="saldo">
+                  <option value="5000">S/ 5,000</option>
+                  <option value="10000" selected>S/ 10,000</option>
+                  <option value="20000">S/ 20,000</option>
+                  <option value="50000">S/ 50,000</option>
+                </select>
+              </label>
+              <label>Plazo de ahorro
+                <select id="plazo">
+                  <option value="6">6 meses</option>
+                  <option value="12" selected>12 meses</option>
+                  <option value="18">18 meses</option>
+                  <option value="24">24 meses</option>
+                </select>
+              </label>
+            </div>
+            <input class="range" id="plazoRange" type="range" min="1" max="24" value="12">
+            <p style="font-size:12px;color:#5b6475">1 mes · 6 meses · 12 meses · 18 meses · 24 meses</p>
+            <div class="sim-row" style="margin-top:12px">
+              <button class="btn btn-navy" type="submit">Calcular interés</button>
+              <div class="interest-box">
+                <h4>Interés estimado</h4>
+                <div class="big" id="interesEst">S/ 370.00</div>
+                <p id="tasaAnual">Tasa anual: 3.70%</p>
+                <div class="note">El cálculo es referencial y puede variar según condiciones del mercado.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h3>Apertura digital</h3>
+          <p>Fórmula paso a paso para abrir la cuenta con validación biométrica.</p>
+          <div style="display:flex;gap:12px;align-items:center;margin-top:12px">
+            <div class="steps">
+              <div class="step"><span class="num">1</span><div><strong>Saldo Promedio</strong><br><small>Ingresa tu información básica.</small></div></div>
+              <div class="step"><span class="num">2</span><div><strong>Plazo de ahorro</strong><br><small>Verificación de identidad con reconocimiento facial.</small></div></div>
+              <div class="step"><span class="num">3</span><div><strong>Plazo de ahorro</strong><br><small>Revisa y confirma los términos y condiciones.</small></div></div>
+              <a class="btn btn-navy" href="#" data-alert="Apertura digital ilustrativa. No se crea una cuenta real.">Abrir cuenta</a>
+            </div>
+            <img class="phone" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Validación facial">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

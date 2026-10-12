@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crédito Vehicular | Demo BCP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+  <div id="app-header"></div>
+
+  <section class="page-hero hero-vehi">
+    <div class="container">
+      <div>
+        <h1>Crédito Vehicular (Personas-Préstamos)</h1>
+        <p><strong>HERO BANNER:</strong><br>FINANCIAMIENTO para VEHÍCULOS NUEVOS, USADOS o ECOLÓGICOS.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" alt="SUV en carretera">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="color:#f37021">PLANES COMERCIALES</h2>
+      <div class="plans" style="margin:16px 0">
+        <article class="plan">
+          <div class="ico-round">🚗</div>
+          <h3>CRÉDITO VEHICULAR TRADICIONAL</h3>
+          <p>(CUOTA INICIAL FLEXIBLE)</p>
+        </article>
+        <article class="plan">
+          <div class="ico-round">⚙️</div>
+          <h3>COMPRA INTELIGENTE</h3>
+          <p>(RENOVACIÓN DE AUTO CADA 2 A 3 AÑOS)</p>
+        </article>
+        <article class="plan">
+          <div class="ico-round">🌿</div>
+          <h3>CRÉDITO ECO VEHICULAR</h3>
+          <p>(TASAS REDUCIDAS para HÍBRIDOS y ELECTRÓNICOS)</p>
+        </article>
+      </div>
+
+      <form class="sim-vehi" id="vehiForm">
+        <div>
+          <h3>SIMULADOR VEHICULAR</h3>
+          <label>VALOR DEL VEHÍCULO<br>
+            <input id="valorAuto" type="number" value="45000" min="8000" style="height:40px;border-radius:8px;border:1px solid #d7deea;padding:0 10px;width:100%">
+          </label>
+          <label>PLAZO (Meses)<br>
+            <input id="plazoAuto" type="number" value="48" min="12" max="72" style="height:40px;border-radius:8px;border:1px solid #d7deea;padding:0 10px;width:100%">
+          </label>
+        </div>
+        <div>
+          <p>CUOTA INICIAL (S/ or %)</p>
+          <input id="inicial" type="number" value="20" min="0" max="80" style="height:40px;border-radius:8px;border:1px solid #d7deea;padding:0 10px;width:160px">
+          <p style="margin-top:10px"><button class="btn btn-orange" type="submit">CALCULAR CUOTAS MENSUALES</button></p>
+        </div>
+        <div class="est">
+          <p>CUOTA MENSUAL ESTIMADA:</p>
+          <h2 id="cuotaAuto">S/ 1,200.00</h2>
+          <small>(referencial)</small>
+        </div>
+      </form>
+
+      <div class="checklist">
+        <div>
+          <h2>CHECKLIST DE REQUISITOS</h2>
+          <a class="btn btn-navy" href="#" data-alert="Formulario de postulación ilustrativo.">FORMULARIO DE POSTULACIÓN DIRECTA</a>
+        </div>
+        <div>
+          <h3>DOCUMENTOS REQUERIDOS:</h3>
+          <p>✅ DNI (Copia)</p>
+          <p>✅ Boletas de pago (3 últimas)</p>
+          <p>✅ Recibo de servicios (agua/luz)</p>
+          <p>✅ Cartas de proforma del vehículo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="app-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
